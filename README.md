@@ -1,2 +1,4 @@
-# cc_sim
-A congestion control simulator (game)
+# Congestion Control Simulator
+
+![Screenshot 01](screenshots/scrot_01.png?raw=true)
+
