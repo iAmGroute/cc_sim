@@ -190,7 +190,10 @@
     document.getElementById('btn_h').addEventListener('click', e => {hide   = !hide;   e.target.className = 'btn' + (hide   ? ' active' : ''); e.stopPropagation()});
     document.getElementById('btn_a').addEventListener('click', e => {assist = !assist; e.target.className = 'btn' + (assist ? ' active' : ''); e.stopPropagation()});
 
-    const plt   = webglplotBundle;
+    canvas.width  = canvas.clientWidth * devicePixelRatio;
+    canvas.height = canvas.clientHeight * devicePixelRatio;
+
+    const plt   = WebGLPlotBundle;
     // const ppt   = 1 / window.devicePixelRatio || 1;
     // const ppt   = 2; // pixels per tick
     // const numX  = Math.round(canvas.clientWidth / ppt / 2) * 2 + 1;
