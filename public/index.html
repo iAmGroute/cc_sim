@@ -199,7 +199,7 @@
     const ppt   = 2; // pixels per tick
     const numX  = Math.round(canvas.width / ppt / 2) * 2 + 1;
     // const numX  = canvas.width + 1;
-    const wglp  = new plt.default(canvas);
+    const wglp  = new plt.WebglPlot(canvas);
 
     const out_line = new plt.WebglLine(new plt.ColorRGBA(0.500, 0.125, 0.125, 1), numX);
     const inp_line = new plt.WebglLine(new plt.ColorRGBA(0.125, 0.500, 0.125, 1), numX);
