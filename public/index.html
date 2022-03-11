@@ -190,8 +190,8 @@
     document.getElementById('btn_h').addEventListener('click', e => {hide   = !hide;   e.target.className = 'btn' + (hide   ? ' active' : ''); e.stopPropagation()});
     document.getElementById('btn_a').addEventListener('click', e => {assist = !assist; e.target.className = 'btn' + (assist ? ' active' : ''); e.stopPropagation()});
 
-    devicePixelRatio = window.devicePixelRatio || 1;
-    canvas.width     = canvas.clientWidth  * devicePixelRatio - 40;
+    devicePixelRatio = 1; // window.devicePixelRatio || 1;
+    canvas.width     = canvas.clientWidth  * devicePixelRatio;
     canvas.height    = canvas.clientHeight * devicePixelRatio;
 
     const plt   = WebglPlotBundle;
