@@ -191,7 +191,7 @@
     document.getElementById('btn_a').addEventListener('click', e => {assist = !assist; e.target.className = 'btn' + (assist ? ' active' : ''); e.stopPropagation()});
 
     devicePixelRatio = window.devicePixelRatio || 1;
-    canvas.width     = canvas.clientWidth  * devicePixelRatio;
+    canvas.width     = canvas.clientWidth  * devicePixelRatio - 40;
     canvas.height    = canvas.clientHeight * devicePixelRatio;
 
     const plt   = WebglPlotBundle;
